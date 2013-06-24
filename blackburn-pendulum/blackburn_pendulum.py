@@ -36,7 +36,7 @@ def get_random_init_conds(bounds):
 
 def make_plot(soln, l0, l1, fname):
     import matplotlib
-    matplotlib.use('png')
+    matplotlib.use('Agg') #matplotlib.use('png')
     import matplotlib.pyplot as plt
     cis = curve_in_space(soln[:,0], soln[:,1], l0, l1)
     plt.plot(*cis)
